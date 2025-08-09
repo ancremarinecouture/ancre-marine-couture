@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bavoir - Ancre Marine Couture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 40px;
+        }
+        img {
+            width: 400px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .info {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bavoir pour bébé</h1>
+    <img src="https://images.unsplash.com/photo-1583511655827-19500ffcdaf5?auto=format&fit=crop&w=400&q=80" alt="Bavoir bébé">
+    <div class="info">Prix : 20 euros</div>
+    <div class="info">Délai de livraison : 2 semaines</div>
+</body>
+</html>
