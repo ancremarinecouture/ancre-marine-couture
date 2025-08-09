@@ -1,4 +1,4 @@
-2<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,22 @@
             text-align: center;
             background-color: #f2f2f2;
         }
-        img {
+        .image-row {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            overflow-x: auto;
+        }
+        .image-row img {
             width: 300px;
             border-radius: 10px;
+            margin: 10px;
+            flex-shrink: 0;
+            cursor: pointer; /* Montre que c’est cliquable */
+            transition: transform 0.3s ease;
+        }
+        .image-row img:hover {
+            transform: scale(1.05);
         }
         a {
             display: inline-block;
@@ -26,7 +39,19 @@
 <body>
     <h1>Bienvenue sur mon site Ancre Marine Couture !</h1>
     <p>Vous retrouverez ci-dessous tout ce que je propose :</p>
-    <img src="https://picsum.photos/300" alt="Image aléatoire">
+
+    <div class="image-row">
+        <a href="page1.html" target="_blank" rel="noopener noreferrer">
+            <img src="https://picsum.photos/300?random=1" alt="Image aléatoire 1">
+        </a>
+        <a href="page2.html" target="_blank" rel="noopener noreferrer">
+            <img src="https://picsum.photos/300?random=2" alt="Image aléatoire 2">
+        </a>
+        <a href="page3.html" target="_blank" rel="noopener noreferrer">
+            <img src="https://picsum.photos/300?random=3" alt="Image aléatoire 3">
+        </a>
+    </div>
+
     <br><br>
     <a href="mailto:ancremarinecouture@outlook.fr">Me contacter</a>
 </body>
