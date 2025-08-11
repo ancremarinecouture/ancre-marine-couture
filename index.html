@@ -2,12 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Bienvenue sur mon site (en cours de creation) !</title>
+    <title>Bienvenue sur mon site (en cours de création) !</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #0055A4
+            background-color: #0055A4;
+            margin: 0;
+            padding: 0;
         }
         .image-row {
             display: flex;
@@ -33,11 +35,35 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            margin: 5px;
+        }
+        /* Styles pour la page contact */
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 50px;
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .item img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        .item span {
+            margin-top: 8px;
+            font-size: 14px;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>Bienvenue sur mon site (en cours de creation) </h1>
+    <!-- Page d'accueil -->
+    <h1>Bienvenue sur mon site (en cours de création)</h1>
     <p>Vous retrouverez ci-dessous tout ce que je propose :</p>
 
     <div class="image-row">
@@ -53,6 +79,22 @@
     </div>
 
     <br><br>
-    <a href="mailto:ancremarinecouture@outlook.fr">Me contacter</a>
+    <a href="#contact">Me contacter</a>
+
+    <!-- Section contact -->
+    <div id="contact" class="container">
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <span>test1</span>
+        </div>
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            <span>test2</span>
+        </div>
+        <div class="item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Mail">
+            <span>testé</span>
+        </div>
+    </div>
 </body>
 </html>
