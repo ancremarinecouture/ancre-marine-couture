@@ -12,51 +12,29 @@
             color: #333;
         }
 
-        /* ----- Navigation ----- */
+        /* Barre de navigation */
         nav {
             background-color: #003366;
             color: white;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
+            justify-content: center;
+            gap: 30px;
+            padding: 15px;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
-        nav .logo {
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-        nav .nav-links {
-            display: flex;
-            gap: 30px;
-        }
-        nav .nav-links a {
+        nav a {
             color: white;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.3s;
         }
-        nav .nav-links a:hover {
+        nav a:hover {
             color: #FFD700;
         }
 
-        /* Burger menu */
-        .burger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-        }
-        .burger div {
-            width: 25px;
-            height: 3px;
-            background: white;
-            border-radius: 5px;
-        }
-
-        /* ----- En-tête ----- */
+        /* En-tête */
         header {
             text-align: center;
             padding: 60px 20px 40px;
@@ -71,7 +49,7 @@
             font-size: 1.2em;
         }
 
-        /* ----- Section créations ----- */
+        /* Section créations */
         section {
             max-width: 1000px;
             margin: auto;
@@ -102,7 +80,7 @@
             transform: scale(1.05);
         }
 
-        /* ----- Section contact ----- */
+        /* Section contact */
         #contact {
             background-color: #003366;
             padding: 40px 20px;
@@ -121,4 +99,100 @@
         .item {
             display: flex;
             flex-direction: column;
-            align-items:
+            align-items: center;
+            color: white;
+        }
+        .item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 8px;
+            transition: transform 0.3s;
+        }
+        .item img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de navigation -->
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#creations">Nos créations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- En-tête -->
+    <header>
+        <h1>Bienvenue sur Ancre Marine Couture</h1>
+        <p>Créations artisanales uniques et personnalisées</p>
+    </header>
+
+    <!-- Section créations -->
+    <section id="creations">
+        <h2>Nos créations</h2>
+        <div class="image-row">
+            <a href="bavoir.html" target="_blank" rel="noopener noreferrer">
+                <img src="https://picsum.photos/300?random=1" alt="Bavoir bébé">
+            </a>
+            <a href="page2.html" target="_blank" rel="noopener noreferrer">
+                <img src="https://picsum.photos/300?random=2" alt="Création 2">
+            </a>
+            <a href="page3.html" target="_blank" rel="noopener noreferrer">
+                <img src="https://picsum.photos/300?random=3" alt="Création 3">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+    <h2>Me contacter</h2>
+
+    <!-- Icônes réseaux sociaux -->
+    <div class="container">
+        <div class="item">
+            <a href="https://www.instagram.com/ancre_marine_couture" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
+            <span>@ancre_marine_couture</span>
+        </div>
+        <div class="item">
+            <a href="https://www.facebook.com/AncreMarineCouture" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </a>
+            <span>Ancre Marine Couture</span>
+        </div>
+        <div class="item">
+            <a href="mailto:ancremarinecouture@outlook.fr">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Mail">
+            </a>
+            <span>ancremarinecouture@outlook.fr</span>
+        </div>
+    </div>
+
+    <!-- Formulaire Jotform intégré -->
+    <iframe 
+        src="https://form.jotform.com/252402382094048" 
+        width="100%" 
+        height="700" 
+        frameborder="0" 
+        style="border:none; border-radius:10px; margin-top:30px;">
+    </iframe>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        © 2025 Ancre Marine Couture - Tous droits réservés
+    </footer>
+
+</body>
+</html>
